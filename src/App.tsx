@@ -30,6 +30,7 @@ import VerifyOTP from "@/pages/VerifyOTP";
 import NewPassword from "@/pages/NewPassword";
 import GuestHome from "@/pages/GuestHome";
 import GuestAIChat from "@/pages/GuestAIChat";
+import PricingPage from "@/pages/PricingPage";
 
 const queryClient = new QueryClient();
 
@@ -202,6 +203,7 @@ const App = () => (
 					<Route path="/" element={<LegalGuideLogin />} />
 					<Route path="/home" element={<GuestHome />} />
 					<Route path="/chat" element={<GuestAIChat />} />
+					<Route path="/pricing" element={<PricingPage />} />
 					<Route path="/signin" element={<LegalGuideSignIn />} />
 					<Route path="/signup" element={<LegalGuideSignUp />} />
 					<Route path="/password-reset" element={<PasswordReset />} />

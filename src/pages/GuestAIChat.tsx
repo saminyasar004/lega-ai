@@ -1,3 +1,4 @@
+import { Navbar } from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,43 +18,7 @@ export default function GuestAIChat() {
 	return (
 		<div className="min-h-screen w-full bg-gradient-to-b from-[#E5F6FF] to-white font-['Inter'] relative">
 			{/* Header */}
-			<header className="bg-white border-b border-blue-100">
-				<div className="container mx-auto px-4 py-4 flex items-center justify-between">
-					<div className="flex items-center gap-2">
-						<div className="w-6 h-6 bg-[#007AFF] rounded flex items-center justify-center">
-							<Sparkles className="w-4 h-4 text-white" />
-						</div>
-						<span className="font-bold text-lg text-gray-800">
-							LegalAI
-						</span>
-					</div>
-
-					<nav className="hidden md:flex items-center gap-6">
-						<a
-							href="/home"
-							className="text-sm text-gray-600 hover:text-blue-600"
-						>
-							Home
-						</a>
-						<a
-							href="#chat"
-							className="text-sm text-[#007AFF] font-medium border-b-2 border-[#007AFF] pb-1"
-						>
-							Meet Legal AI
-						</a>
-						<a
-							href="#pricing"
-							className="text-sm text-gray-600 hover:text-blue-600"
-						>
-							Pricing
-						</a>
-					</nav>
-
-					<Button className="bg-[#007AFF] hover:bg-[#0066cc] text-white h-9 px-5 text-sm font-medium rounded-md shadow-none">
-						Get Started
-					</Button>
-				</div>
-			</header>
+			<Navbar />
 
 			{/* Main Content */}
 			<main className="container mx-auto px-4 py-12 max-w-4xl">
