@@ -46,7 +46,7 @@ export default function LegalGuideSignIn() {
 
 							<div className="flex justify-end">
 								<a
-									href="#"
+									href="/password-reset"
 									className="text-xs text-gray-600 hover:text-blue-600 font-medium"
 								>
 									Forgot password?

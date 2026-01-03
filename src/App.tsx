@@ -25,6 +25,9 @@ import {
 import LegalGuideLogin from "@/pages/LegalGuideLogin";
 import LegalGuideSignIn from "@/pages/LegalGuideSignIn";
 import LegalGuideSignUp from "@/pages/LegalGuideSignUp";
+import PasswordReset from "@/pages/PasswordReset";
+import VerifyOTP from "@/pages/VerifyOTP";
+import NewPassword from "@/pages/NewPassword";
 
 const queryClient = new QueryClient();
 
@@ -197,6 +200,9 @@ const App = () => (
 					<Route path="/" element={<LegalGuideLogin />} />
 					<Route path="/signin" element={<LegalGuideSignIn />} />
 					<Route path="/signup" element={<LegalGuideSignUp />} />
+					<Route path="/password-reset" element={<PasswordReset />} />
+					<Route path="/verify-otp" element={<VerifyOTP />} />
+					<Route path="/new-password" element={<NewPassword />} />
 					<Route path="/landing" element={<LandingPage />} />
 				</Routes>
 			</BrowserRouter>
