@@ -22,6 +22,7 @@ import {
 	Code2,
 	Terminal,
 } from "lucide-react";
+import LegalGuideLogin from "@/pages/LegalGuideLogin";
 
 const queryClient = new QueryClient();
 
@@ -191,7 +192,8 @@ const App = () => (
 			<Sonner />
 			<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<LandingPage />} />
+					<Route path="/" element={<LegalGuideLogin />} />
+					<Route path="/landing" element={<LandingPage />} />
 				</Routes>
 			</BrowserRouter>
 		</TooltipProvider>
