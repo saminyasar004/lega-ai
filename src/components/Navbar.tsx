@@ -17,14 +17,13 @@ export function Navbar() {
 				{/* Logo Section */}
 				<Link
 					to="/home"
-					className="flex items-center gap-3 active:opacity-80 transition-opacity"
+					className="flex items-center active:opacity-80 transition-opacity"
 				>
-					<div className="text-[#007AFF]">
-						<Scale className="w-8 h-8 stroke-[2.2]" />
-					</div>
-					<span className="font-bold text-2xl text-[#007AFF] tracking-tight">
-						LegaAI
-					</span>
+					<img
+						src="/logo.svg"
+						alt="LegaAI Logo"
+						className="h-10 w-auto object-contain"
+					/>
 				</Link>
 
 				{/* Desktop Navigation Link Center */}
