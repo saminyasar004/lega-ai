@@ -28,6 +28,7 @@ import LegalGuideSignUp from "@/pages/LegalGuideSignUp";
 import PasswordReset from "@/pages/PasswordReset";
 import VerifyOTP from "@/pages/VerifyOTP";
 import NewPassword from "@/pages/NewPassword";
+import GuestHome from "@/pages/GuestHome";
 
 const queryClient = new QueryClient();
 
@@ -198,6 +199,7 @@ const App = () => (
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<LegalGuideLogin />} />
+					<Route path="/home" element={<GuestHome />} />
 					<Route path="/signin" element={<LegalGuideSignIn />} />
 					<Route path="/signup" element={<LegalGuideSignUp />} />
 					<Route path="/password-reset" element={<PasswordReset />} />
