@@ -9,30 +9,30 @@ export default function PricingPage() {
 			<Navbar />
 
 			{/* Main Content */}
-			<main className="flex-grow container mx-auto px-4 pt-40 pb-24">
+			<main className="flex-grow container mx-auto px-4 pt-32 md:pt-40 pb-20 md:pb-24">
 				{/* Hero Text */}
-				<div className="text-center mb-16 max-w-5xl mx-auto space-y-12">
-					<p className="text-3xl md:text-4xl lg:text-5xl text-[#5D5D5D] font-['Playfair_Display'] leading-[1.4] px-4">
+				<div className="text-center mb-16 max-w-5xl mx-auto space-y-8 md:space-y-12">
+					<p className="text-2xl md:text-4xl lg:text-5xl text-[#5D5D5D] font-['Playfair_Display'] leading-relaxed px-2 md:px-4">
 						To enjoy the full concierge experience — unlimited
 						support, personalized recommendations, and direct access
 						to human experts — please explore our membership plans."
 					</p>
-					<h2 className="text-4xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-bold text-[#2D2D2D] pt-4">
+					<h2 className="text-3xl md:text-5xl lg:text-6xl font-['Playfair_Display'] font-bold text-[#2D2D2D] pt-2">
 						Premium Plans of Legal AI
 					</h2>
 				</div>
 
 				{/* Pricing Section */}
-				<div className="max-w-7xl mx-auto px-4">
-					<div className="grid md:grid-cols-3 gap-8 items-stretch pt-12">
+				<div className="max-w-7xl mx-auto px-4 md:px-6">
+					<div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 items-stretch pt-8 md:pt-12">
 						{/* Free Plan */}
 						<div className="relative group">
 							<Card className="h-full bg-white/80 backdrop-blur-sm border border-blue-100 rounded-[2.5rem] shadow-[0_15px_40px_-15px_rgba(0,122,255,0.15)] transition-all duration-300 hover:shadow-[0_20px_50px_-15px_rgba(0,122,255,0.25)] flex flex-col overflow-hidden">
-								<CardContent className="p-10 flex flex-col h-full">
+								<CardContent className="p-8 md:p-10 flex flex-col h-full">
 									<div className="text-center mb-8">
-										<div className="text-[3.5rem] font-bold text-[#1A2B3C] mb-2 font-['Inter'] leading-tight">
+										<div className="text-[3rem] md:text-[3.5rem] font-bold text-[#1A2B3C] mb-2 font-['Inter'] leading-tight">
 											$0.0
-											<span className="text-[1.75rem] font-medium text-[#1A2B3C]">
+											<span className="text-[1.5rem] md:text-[1.75rem] font-medium text-[#1A2B3C]">
 												/mth
 											</span>
 										</div>
@@ -66,7 +66,7 @@ export default function PricingPage() {
 										))}
 									</div>
 
-									<Button className="w-full h-[3.75rem] bg-[#1E88E5] hover:bg-[#1976D2] text-white text-lg font-bold rounded-xl shadow-lg shadow-blue-500/20">
+									<Button className="w-full h-14 md:h-[3.75rem] bg-[#1E88E5] hover:bg-[#1976D2] text-white text-lg font-bold rounded-xl shadow-lg shadow-blue-500/20">
 										Selected
 									</Button>
 								</CardContent>
@@ -76,7 +76,7 @@ export default function PricingPage() {
 						{/* Plus Plan - Most Popular */}
 						<div className="relative group">
 							{/* Curve Arrow and Most Popular text */}
-							<div className="absolute -top-16 -right-4 md:-right-12 pointer-events-none hidden md:block">
+							<div className="absolute -top-16 -right-4 md:-right-12 pointer-events-none hidden lg:block">
 								<div className="relative">
 									<span className="absolute -top-10 -left-4 whitespace-nowrap text-[#007AFF] font-['Playfair_Display'] italic font-semibold text-lg rotate-[-5deg]">
 										Most popular!
@@ -107,12 +107,18 @@ export default function PricingPage() {
 								</div>
 							</div>
 
-							<Card className="h-full bg-white/90 backdrop-blur-sm border-2 border-blue-200 rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(0,122,255,0.3)] transform transition-all duration-300 hover:scale-[1.02] flex flex-col overflow-hidden">
-								<CardContent className="p-10 flex flex-col h-full">
+							<Card className="h-full bg-white/90 backdrop-blur-sm border-2 border-blue-200 rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(0,122,255,0.3)] transform transition-all duration-300 md:hover:scale-[1.02] flex flex-col overflow-hidden">
+								<CardContent className="p-8 md:p-10 flex flex-col h-full">
+									{/* Mobile Most Popular Badge */}
+									<div className="lg:hidden flex justify-center mb-4">
+										<span className="bg-blue-50 text-[#007AFF] px-4 py-1.5 rounded-full text-sm font-bold border border-blue-100">
+											MOST POPULAR
+										</span>
+									</div>
 									<div className="text-center mb-8">
-										<div className="text-[3.5rem] font-bold text-[#1A2B3C] mb-2 font-['Inter'] leading-tight">
+										<div className="text-[3rem] md:text-[3.5rem] font-bold text-[#1A2B3C] mb-2 font-['Inter'] leading-tight">
 											$20
-											<span className="text-[1.75rem] font-medium text-[#1A2B3C]">
+											<span className="text-[1.5rem] md:text-[1.75rem] font-medium text-[#1A2B3C]">
 												/mth
 											</span>
 										</div>
@@ -146,7 +152,7 @@ export default function PricingPage() {
 										))}
 									</div>
 
-									<Button className="w-full h-[3.75rem] bg-[#1E88E5] hover:bg-[#1976D2] text-white text-lg font-bold rounded-xl shadow-lg shadow-blue-500/20">
+									<Button className="w-full h-14 md:h-[3.75rem] bg-[#1E88E5] hover:bg-[#1976D2] text-white text-lg font-bold rounded-xl shadow-lg shadow-blue-500/20">
 										Get started
 									</Button>
 								</CardContent>
@@ -156,11 +162,11 @@ export default function PricingPage() {
 						{/* Elite Plan */}
 						<div className="relative group">
 							<Card className="h-full bg-white/80 backdrop-blur-sm border border-blue-100 rounded-[2.5rem] shadow-[0_15px_40px_-15px_rgba(0,122,255,0.15)] transition-all duration-300 hover:shadow-[0_20px_50px_-15px_rgba(0,122,255,0.25)] flex flex-col overflow-hidden">
-								<CardContent className="p-10 flex flex-col h-full">
+								<CardContent className="p-8 md:p-10 flex flex-col h-full">
 									<div className="text-center mb-8">
-										<div className="text-[3.5rem] font-bold text-[#1A2B3C] mb-2 font-['Inter'] leading-tight">
+										<div className="text-[3rem] md:text-[3.5rem] font-bold text-[#1A2B3C] mb-2 font-['Inter'] leading-tight">
 											$40
-											<span className="text-[1.75rem] font-medium text-[#1A2B3C]">
+											<span className="text-[1.5rem] md:text-[1.75rem] font-medium text-[#1A2B3C]">
 												/mth
 											</span>
 										</div>
@@ -194,7 +200,7 @@ export default function PricingPage() {
 										))}
 									</div>
 
-									<Button className="w-full h-[3.75rem] bg-[#1E88E5] hover:bg-[#1976D2] text-white text-lg font-bold rounded-xl shadow-lg shadow-blue-500/20">
+									<Button className="w-full h-14 md:h-[3.75rem] bg-[#1E88E5] hover:bg-[#1976D2] text-white text-lg font-bold rounded-xl shadow-lg shadow-blue-500/20">
 										Get started
 									</Button>
 								</CardContent>
@@ -205,22 +211,18 @@ export default function PricingPage() {
 			</main>
 
 			{/* Footer */}
-			<footer className="py-20 bg-white/50 backdrop-blur-sm mt-auto border-t border-blue-100">
+			<footer className="py-20 bg-white md:bg-white/50 backdrop-blur-sm mt-auto border-t border-blue-100">
 				<div className="container mx-auto px-6">
-					<div className="flex flex-col md:flex-row justify-between items-start gap-12">
+					<div className="flex flex-col md:flex-row justify-between items-start gap-12 md:gap-24">
 						<div className="max-w-md">
 							<div className="flex items-center gap-3 mb-6">
-								<div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg shadow-blue-100 border border-blue-50 overflow-hidden">
-									<div className="w-full h-full bg-[#007AFF] flex items-center justify-center">
-										<div className="w-6 h-6 bg-white rounded-full opacity-20 transform translate-x-1 translate-y-1"></div>
-										<div className="absolute w-4 h-4 bg-white rounded-full opacity-40 -translate-x-1 -translate-y-1"></div>
-									</div>
-								</div>
-								<span className="font-bold text-2xl text-[#1A2B3C]">
-									Logoipsum
-								</span>
+								<img
+									src="/logo.svg"
+									alt="LegaAI Logo"
+									className="h-10 w-auto"
+								/>
 							</div>
-							<p className="text-[#64748B] text-lg leading-relaxed mb-8 pr-8">
+							<p className="text-[#64748B] text-lg leading-relaxed mb-8 pr-0 md:pr-8">
 								AI-powered legal guidance made accessible. Get
 								answers to your legal questions 24/7.
 							</p>
@@ -229,7 +231,7 @@ export default function PricingPage() {
 							</p>
 						</div>
 
-						<div className="flex gap-24">
+						<div className="flex flex-row gap-16 md:gap-24">
 							<div>
 								<div className="text-sm font-bold text-[#64748B] mb-6 uppercase tracking-wider">
 									Pages
@@ -277,7 +279,7 @@ export default function PricingPage() {
 							</div>
 						</div>
 
-						<div className="flex gap-6 items-center">
+						<div className="flex gap-6 items-center pt-8 md:pt-0">
 							<a
 								href="#"
 								className="text-[#94A3B8] hover:text-[#007AFF] transition-colors"
