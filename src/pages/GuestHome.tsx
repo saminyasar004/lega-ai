@@ -36,7 +36,7 @@ export default function GuestHome() {
 							Home
 						</a>
 						<a
-							href="#start"
+							href="/chat"
 							className="text-sm text-gray-600 hover:text-blue-600"
 						>
 							Start LegalAI

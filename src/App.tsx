@@ -29,6 +29,7 @@ import PasswordReset from "@/pages/PasswordReset";
 import VerifyOTP from "@/pages/VerifyOTP";
 import NewPassword from "@/pages/NewPassword";
 import GuestHome from "@/pages/GuestHome";
+import GuestAIChat from "@/pages/GuestAIChat";
 
 const queryClient = new QueryClient();
 
@@ -200,6 +201,7 @@ const App = () => (
 				<Routes>
 					<Route path="/" element={<LegalGuideLogin />} />
 					<Route path="/home" element={<GuestHome />} />
+					<Route path="/chat" element={<GuestAIChat />} />
 					<Route path="/signin" element={<LegalGuideSignIn />} />
 					<Route path="/signup" element={<LegalGuideSignUp />} />
 					<Route path="/password-reset" element={<PasswordReset />} />
