@@ -1,25 +1,43 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Eye } from "lucide-react";
 
-export default function LegalGuideSignIn() {
+export default function LegalGuideSignUp() {
 	return (
 		<div className="min-h-screen w-full bg-[#E5F6FF] flex items-center justify-center p-4 md:p-8 font-['Inter'] relative overflow-hidden">
 			<div className="container mx-auto max-w-6xl grid md:grid-cols-2 gap-8 items-center min-h-[600px]">
 				{/* Left Side - Content */}
 				<div className="flex flex-col items-center md:items-start space-y-6 z-10 w-full max-w-md mx-auto md:mx-0">
 					<h1 className="text-3xl md:text-4xl text-[#007AFF] font-['Playfair_Display'] font-bold text-center md:text-left w-full">
-						Sign in to your account
+						Create Your Account
 					</h1>
 
-					<div className="w-full bg-white rounded-xl shadow-sm p-6 md:p-8 space-y-6">
+					<div className="w-full bg-white rounded-xl shadow-sm p-6 md:p-8 space-y-5">
 						<div className="space-y-4">
 							<div className="space-y-2">
-								<Label htmlFor="email">Email address</Label>
+								<Label htmlFor="firstName">First Name</Label>
+								<Input
+									id="firstName"
+									type="text"
+									className="h-11 bg-white border-gray-200"
+								/>
+							</div>
+
+							<div className="space-y-2">
+								<Label htmlFor="lastName">Last Name</Label>
+								<Input
+									id="lastName"
+									type="text"
+									className="h-11 bg-white border-gray-200"
+								/>
+							</div>
+
+							<div className="space-y-2">
+								<Label htmlFor="email">Email Address</Label>
 								<Input
 									id="email"
-									placeholder="your@email.com"
 									type="email"
 									className="h-11 bg-white border-gray-200"
 								/>
@@ -40,18 +58,38 @@ export default function LegalGuideSignIn() {
 								</div>
 							</div>
 
-							<Button className="w-full h-11 bg-[#007AFF] hover:bg-[#0069d9] text-white">
-								Sign In
-							</Button>
-
-							<div className="flex justify-end">
-								<a
-									href="#"
-									className="text-xs text-gray-600 hover:text-blue-600 font-medium"
-								>
-									Forgot password?
-								</a>
+							<div className="space-y-2">
+								<Label htmlFor="confirmPassword">
+									Confirm Password
+								</Label>
+								<div className="relative">
+									<Input
+										id="confirmPassword"
+										type="password"
+										className="h-11 bg-white border-gray-200 pr-10"
+									/>
+									<button className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+										<Eye className="w-4 h-4" />
+									</button>
+								</div>
 							</div>
+
+							<div className="flex items-center space-x-2">
+								<Checkbox
+									id="terms"
+									className="border-gray-300"
+								/>
+								<Label
+									htmlFor="terms"
+									className="text-sm font-normal text-gray-600 leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+								>
+									You agree to our friendly privacy policy.
+								</Label>
+							</div>
+
+							<Button className="w-full h-11 bg-[#007AFF] hover:bg-[#0069d9] text-white">
+								Create Account
+							</Button>
 						</div>
 
 						<div className="relative flex items-center">
@@ -87,13 +125,13 @@ export default function LegalGuideSignIn() {
 
 						<div className="text-center">
 							<span className="text-gray-600 text-sm">
-								Don't have an account?{" "}
+								Already have an account?{" "}
 							</span>
 							<a
-								href="/signup"
+								href="/signin"
 								className="font-bold text-[#007AFF] hover:underline text-sm"
 							>
-								Sign Up
+								Sign In
 							</a>
 						</div>
 					</div>
