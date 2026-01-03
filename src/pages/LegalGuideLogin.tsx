@@ -73,7 +73,7 @@ export default function LegalGuideLogin() {
 								Already have an account?{" "}
 							</span>
 							<a
-								href="#"
+								href="/signin"
 								className="font-bold text-[#007AFF] hover:underline"
 							>
 								Sign In

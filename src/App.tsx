@@ -23,6 +23,7 @@ import {
 	Terminal,
 } from "lucide-react";
 import LegalGuideLogin from "@/pages/LegalGuideLogin";
+import LegalGuideSignIn from "@/pages/LegalGuideSignIn";
 
 const queryClient = new QueryClient();
 
@@ -193,6 +194,7 @@ const App = () => (
 			<BrowserRouter>
 				<Routes>
 					<Route path="/" element={<LegalGuideLogin />} />
+					<Route path="/signin" element={<LegalGuideSignIn />} />
 					<Route path="/landing" element={<LandingPage />} />
 				</Routes>
 			</BrowserRouter>
