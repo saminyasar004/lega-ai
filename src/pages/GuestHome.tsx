@@ -16,13 +16,10 @@ import {
 
 export default function GuestHome() {
 	return (
-		<div className="min-h-screen w-full bg-white font-['Inter']">
-			{/* Header */}
-			<Navbar />
-
-			{/* Hero Section */}
-			<section className="bg-gradient-to-b from-[#E5F6FF] to-white py-16 md:py-24">
-				<div className="container mx-auto px-4 text-center">
+		<div className="min-h-screen w-full font-['Inter'] bg-white">
+			<section className="bg-gradient-to-b from-[#E5F6FF] to-white pb-16 md:pb-24">
+				<Navbar />
+				<div className="container mx-auto px-4 text-center pt-32">
 					<div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-blue-100 shadow-sm text-blue-600 font-medium text-sm mb-6">
 						<Sparkles className="w-4 h-4" />
 						<span>AI-Powered Legal Advice</span>

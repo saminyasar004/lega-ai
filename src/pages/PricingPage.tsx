@@ -6,11 +6,10 @@ import { Check, Linkedin, Facebook } from "lucide-react";
 export default function PricingPage() {
 	return (
 		<div className="min-h-screen w-full bg-[#EBF8FF] font-['Inter'] flex flex-col">
-			{/* Header */}
 			<Navbar />
 
 			{/* Main Content */}
-			<main className="flex-grow container mx-auto px-4 py-16 md:py-24">
+			<main className="flex-grow container mx-auto px-4 pt-40 pb-24">
 				{/* Hero Text */}
 				<div className="text-center mb-16 max-w-5xl mx-auto space-y-12">
 					<p className="text-3xl md:text-4xl lg:text-5xl text-[#5D5D5D] font-['Playfair_Display'] leading-[1.4] px-4">

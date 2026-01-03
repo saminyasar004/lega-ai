@@ -17,11 +17,10 @@ export default function GuestAIChat() {
 
 	return (
 		<div className="min-h-screen w-full bg-gradient-to-b from-[#E5F6FF] to-white font-['Inter'] relative">
-			{/* Header */}
 			<Navbar />
 
 			{/* Main Content */}
-			<main className="container mx-auto px-4 py-12 max-w-4xl">
+			<main className="container mx-auto px-4 pt-32 pb-12 max-w-4xl">
 				{/* Chat Section */}
 				<div className="text-center mb-8">
 					<h1 className="text-4xl md:text-5xl font-['Playfair_Display'] font-bold text-[#007AFF] mb-3">
